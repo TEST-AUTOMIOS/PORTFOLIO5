@@ -1,0 +1,61 @@
+.home{
+    background: #0a0913;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fafcfd;
+   height: 100svh;
+    margin-top: 120px;
+    
+}
+
+.home-text{
+    font-size: 3rem;
+    font-weight: bold;
+    font-style:normal;
+    opacity: 1;
+    /* transform: translateY(-70px); */
+    /* animation: fade-in 2s ease-in-out forwards; */
+}
+/* @keyframes fade-in {
+    0%{
+        opacity: 0;
+        transform: translateY(-70px);
+    }
+    100%{
+        opacity: 100%;
+        transform: translateY(0px);
+    }
+} */
+
+
+.home-span{
+    color: #7d7d7e;
+}
+.home-para{
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #d0d0d4;
+}
+.home-button{
+    color: #fafcfd;
+    /* background-color:; */
+background: linear-gradient(to right, rgb(73, 85, 177) 20%, rgb(119, 179, 205) 50%, rgb(60, 88, 179) 80%);
+    border-radius: 40px;
+    font-weight: bold;
+    height: 50px;
+    width: 10%;
+    /* box-shadow: rgba(255, 255, 255, 0.6); */
+    transition: box-shadow 0.5s ease-in-out ;
+    border: none;
+    animation: transform;
+    /* -webkit-box-shadow: 0 0 20px rgba(52, 152, 219, 0.7); Vendor prefix for older WebKit browsers */
+   
+}
+.home-button:hover{
+    box-shadow: 0 0px 20px rgba(177, 177, 174, 0.8); /* Apply the glow effect on hover */
+    transform: scaleX(.9);
+}
+
+  

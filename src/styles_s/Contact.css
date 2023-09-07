@@ -1,0 +1,13 @@
+.contact{
+    height: 100svh;
+    color: #f2f5f8;
+    text-align: center;
+    padding: 150px;
+}
+.contact-para{
+    font-weight: bold;
+    color: #a3a6a9;
+}
+.contact-head{
+    font-weight: bold;
+}

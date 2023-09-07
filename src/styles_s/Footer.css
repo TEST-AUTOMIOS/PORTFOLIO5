@@ -1,0 +1,68 @@
+.footer-content {
+  display: flex; /* Display children side by side */
+  justify-content: space-between; /* Space between columns */
+  align-items: center; /* Vertically align children */
+  color: #e9ebed;
+  flex-direction: row;
+  text-align: justify;
+ 
+}
+hr{
+  border: #fff 1px solid;
+}
+
+.footer-section {
+  flex: 1; /* Equal width for each column */
+  padding: 15px; /* Adjust spacing between columns */
+ 
+}
+.footer-section li{
+  /* text-decoration: none; */
+  list-style: none;
+  
+}
+.footer-section li{
+  
+align-items: flex-start; 
+ text-align: left;
+}
+.footer-title{
+  text-align: start;
+  margin-left: 15px;
+}
+.social-link a{
+  list-style-type:none;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Additional styling for each column, customize as needed */
+.footer-section h1.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Add any other styling for the footer sections as needed */
+/* Position the "Back to Top" button at the top-right corner */
+.scroll-to-top {
+  position: fixed;
+  bottom: 40px; /* Adjust the distance from the bottom */
+  right: 20px; /* Adjust the distance from the right */
+  width: 40px;
+  height: 40px;
+  background-color: #f17b06;
+  color: #fff;
+  border: whitesmoke solid 1px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  transition: background-color 0.9s;
+  opacity: 1;
+  z-index: 999; /* Ensure it appears above other content */
+}
+
+/* Show the button on hover */
+.scroll-to-top:hover {
+  background-color: #e9ebed;
+}

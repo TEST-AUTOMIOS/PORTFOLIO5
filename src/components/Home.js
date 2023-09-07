@@ -22,6 +22,7 @@ function Home() {
           <a href="/about"><button type="button" className="home-button">Get Started</button></a>
         </div>
       </div>
+      <hr/>
     </div>
   );
 }

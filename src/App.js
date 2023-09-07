@@ -23,13 +23,17 @@ function App() {
     <BrowserRouter>
       <div className="container-fluid">
         <Navbar />
-        <Routes>
+        {/* <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<Service />} />
           <Route path="/work" element={<Work />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/contact_form" element={<ContactForm/>}/>
-        </Routes>
+        </Routes> */}
+        <Home/>
+        <Service/>
+        <Work/>
+        <Contact/>
         <Footer />
       </div>
     </BrowserRouter>

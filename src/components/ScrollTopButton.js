@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../styles_s/ScrollToTop.css';
+import Uparrow from '../images/up-arrow.png'
 
 function ScrollTopButton() {
   const [isVisible, setIsVisible] = useState(false);
@@ -13,7 +14,7 @@ function ScrollTopButton() {
       className={`sticky-back-to-top-button ${isVisible ? 'visible' : ''}`}
       onClick={scrollToTop}
     >
-      <i className="fa fa-arrow-up" />
+     <img src={Uparrow} alt='logo' style={{width:15,height:15}}/>
     </div>
   );
 }

@@ -1,0 +1,16 @@
+/* navbar styles are goes here  */
+
+nav{
+
+    padding: 20px 10px;
+    background: #0b101c;
+}
+
+#logo{
+    padding: 30px 10px;
+    cursor: pointer;
+}
+.container-fluid{
+    height: 100vh;
+    /* background-color: #0b101c; */
+}

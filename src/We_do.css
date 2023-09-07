@@ -1,0 +1,16 @@
+#feature-text{
+    text-align: center;
+    color: #f3f3f4;
+    font-weight: bold;
+  }
+
+  #feature-card{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    /* text-align:left; */
+    color: #f3f3f4;
+    font-weight: bold;
+    padding: 20px;
+  }

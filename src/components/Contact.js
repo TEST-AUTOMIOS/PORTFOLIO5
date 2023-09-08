@@ -13,7 +13,7 @@ function Contact(){
                 &nbsp;
                 <a href="/contact_form">
                 <button type="button" className="home-button">
-                  Contact Us
+                  Explore
                 </button>
               </a>
                 

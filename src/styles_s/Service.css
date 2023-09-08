@@ -5,6 +5,7 @@
     color: #f2f6f9;
     align-items: center;
     text-align: center;
+    padding: 40px;
 }
 h2{
     font-size: clamp(3rem,5vw + .8vh ,6rem);

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import '../styles_s/contactForm.css';
+import "../styles_s/contactForm.css";
 
 function ContactForm() {
   const [formData, setFormData] = useState({
@@ -24,10 +24,12 @@ function ContactForm() {
   };
 
   return (
-    <div className="container mt-5">
+    <div className="container mt-5 ">
       <h2 className="contact-head">Contact Us</h2>
-      <form onSubmit={handleSubmit}>
-        <div className="row mb-3">
+      <div className="make-it">
+      <div className="make-it1">
+      <form onSubmit={handleSubmit} className="contact-form">
+        <div className="row mb-3 ">
           <div className="col">
             <label htmlFor="email" className="form-label">
               Name
@@ -85,6 +87,18 @@ function ContactForm() {
           Send Message
         </button>
       </form>
+      
+        
+      </div>
+      
+        
+     
+
+      {/* space for animation */}
+      <div className="make-it2">
+        <h3>anime goes here...</h3>
+      </div>
+      </div>
     </div>
   );
 }

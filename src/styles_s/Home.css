@@ -1,11 +1,12 @@
 .home{
-    background: #0a0913;
+    /* background: #0a0913; */
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: #fafcfd;
    height: 100svh;
+   position: relative;
  
     
 }
@@ -57,5 +58,17 @@ background: linear-gradient(to right, rgb(73, 85, 177) 20%, rgb(119, 179, 205) 5
     box-shadow: 0 0px 20px rgba(177, 177, 174, 0.8); /* Apply the glow effect on hover */
     transform: scaleX(.9);
 }
+.three-container {
+    position: absolute;
+    top: 0;
+    left: 0;
 
+
+  }
+  
+  .ui-elements {
+
+    z-index: 1;
+  }
+  
   

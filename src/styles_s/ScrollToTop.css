@@ -12,6 +12,8 @@
     cursor: pointer;
     transition: background-color 0.3s;
     opacity: 0;
+    align-items: center;
+    justify-content: center;
   }
   
   .sticky-back-to-top-button.visible {

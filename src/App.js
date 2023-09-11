@@ -31,7 +31,7 @@ function App() {
           <Route path="/contact_form" element={<ContactForm/>}/>
         </Routes>
         {/* <Home/> */}
-        <Service/>
+        {/* <Service/> */}
         <Work/>
         <Contact/>
         <Footer />

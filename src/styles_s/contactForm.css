@@ -40,3 +40,24 @@
 .send-message{
     width: 100%;
 }
+
+@media (max-width:760px){
+    .make-it{
+        display: block !important ;
+        width: 100%;
+
+    }
+    .text-area{
+        width : 100%;
+        height: 200px;
+       
+    }
+    .make-it1{
+        display: block;
+        width: 100%;
+    }
+    .make-it2{
+        display:block!important;
+        width: 100%;
+    }
+}

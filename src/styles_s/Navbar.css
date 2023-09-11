@@ -33,7 +33,8 @@ nav {
   transition: 0.5s ease-in-out;
 }
 
-.navbar-list li a:hover {
+.navbar-list li a:hover
+ {
   color: #17cf97;
 }
 
@@ -43,6 +44,7 @@ nav {
   width: 50%;
   height: 2px;
   background: #17cf97;
+  color: #17cf97;
   position: absolute;
   left: 20%;
   bottom: -4px;

@@ -52,8 +52,6 @@ function Home() {
             <Model modelPath="/need_some_space.glb" scale={modelScale} />
           </Canvas>
         </div>
-
-        
       </div>
     </div>
   );

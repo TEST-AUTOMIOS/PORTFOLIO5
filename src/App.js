@@ -1,3 +1,4 @@
+import React from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -7,7 +8,6 @@ import Service from "./components/Service";
 import Work from "./components/Work";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-// import ScrollToTopButton from './components/ScrollTopButton';
 import {
   BrowserRouter as Router,
   Route,
@@ -22,18 +22,25 @@ function App() {
   return (
     <BrowserRouter>
       <div className="container-fluid">
+        {/* Canvas as background */}
+        <canvas
+          id="background-canvas"
+          style={{
+            position: "fixed",
+            top: 0,
+            left: 0,
+            zIndex: -1, // Behind other content
+            width: "100%",
+            height: "100%",
+          }}
+        ></canvas>
+        
         <Navbar />
-        <Routes>
-          {/* <Route path="/" element={<Home />} /> */}
-          <Route path="/about" element={<Service />} />
-          <Route path="/work" element={<Work />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/contact_form" element={<ContactForm/>}/>
-        </Routes>
-        {/* <Home/> */}
-        {/* <Service/> */}
-        <Work/>
-        <Contact/>
+        <Home />
+        <Service />
+        <Work />
+        <Contact />
+        <ContactForm />
         <Footer />
       </div>
     </BrowserRouter>

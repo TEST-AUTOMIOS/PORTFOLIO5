@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import "../styles_s/contactForm.css";
+import { Canvas } from "@react-three/fiber";
+import { Avatar } from "../Models/Avatar";
+import { OrbitControls } from "@react-three/drei";
 
 function ContactForm() {
   const [formData, setFormData] = useState({
@@ -30,7 +33,7 @@ function ContactForm() {
       <div className="make-it1">
       <form onSubmit={handleSubmit} className="contact-form">
         <div className="row mb-3 ">
-          <div className="col">
+          <div className="row">
             <label htmlFor="email" className="form-label">
               Name
             </label>
@@ -43,7 +46,7 @@ function ContactForm() {
               onChange={handleChange}
             />
           </div>
-          <div className="col">
+          <div className="row">
             <label htmlFor="email" className="form-label">
               Email
             </label>
@@ -56,7 +59,7 @@ function ContactForm() {
               onChange={handleChange}
             />
           </div>
-          <div className="col">
+          {/* <div className="row">
             <label htmlFor="subject" className="form-label">
               Subject
             </label>
@@ -68,7 +71,7 @@ function ContactForm() {
               value={formData.subject}
               onChange={handleChange}
             />
-          </div>
+          </div> */}
         </div>
         <div className="mb-3">
           <label htmlFor="message" className="form-label">
@@ -96,7 +99,11 @@ function ContactForm() {
 
       {/* space for animation */}
       <div className="make-it2">
-        <h3>anime goes here...</h3>
+      <Canvas camera={{position:[3,3,3],fov:30}}>
+        <ambientLight intensity={10}/>
+        <OrbitControls/>
+       <Avatar/>
+      </Canvas>
       </div>
       </div>
     </div>

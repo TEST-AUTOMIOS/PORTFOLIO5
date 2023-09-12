@@ -7,6 +7,7 @@
   color: #fafcfd;
   height: 100svh;
   position: relative;
+  padding: 0;
 }
 
 .home-text {
@@ -60,12 +61,4 @@
   box-shadow: 0 0px 20px rgba(181, 181, 178, 0.8); /* Apply the glow effect on hover */
   transform: scaleX(0.9);
 }
-.three-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
 
-.ui-elements {
-  z-index: 1;
-}

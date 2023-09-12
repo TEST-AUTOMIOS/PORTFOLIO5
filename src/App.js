@@ -23,7 +23,7 @@ function App() {
     <BrowserRouter>
       <div className="container-fluid">
         {/* Canvas as background */}
-        <canvas
+        {/* <canvas
           id="background-canvas"
           style={{
             position: "fixed",
@@ -33,7 +33,7 @@ function App() {
             width: "100%",
             height: "100%",
           }}
-        ></canvas>
+        ></canvas> */}
         
         <Navbar />
         <Home />

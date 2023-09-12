@@ -1,5 +1,4 @@
-.home {
-  /* background: #0a0913; */
+/* .home {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8,16 +7,13 @@
   height: 100svh;
   position: relative;
   padding: 0;
-}
+  
+} */
 
-.home-text {
-  font-size: 3rem;
-  font-weight: bold;
-  font-style: normal;
-  opacity: 1;
+
   /* transform: translateY(-70px); */
   /* animation: fade-in 2s ease-in-out forwards; */
-}
+
 /* @keyframes fade-in {
     0%{
         opacity: 0;
@@ -29,14 +25,7 @@
     }
 } */
 
-.home-span {
-  color: #7d7d7e;
-}
-.home-para {
-  font-size: 1.3rem;
-  font-weight: bold;
-  color: #d0d0d4;
-}
+
 .home-button {
   color: #fafcfd;
   /* background-color:; */
@@ -61,4 +50,71 @@
   box-shadow: 0 0px 20px rgba(181, 181, 178, 0.8); /* Apply the glow effect on hover */
   transform: scaleX(0.9);
 }
+
+/* Home.css */
+
+
+
+/* Home.css */
+
+.container-fluid.home {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.home-flex {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.home-content {
+  flex: 1;
+  text-align: left;
+  color: #fafcfd;
+  font-weight: bold;
+  /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+  padding: 20px; /* Add padding for spacing */
+}
+
+.home-canvas {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Add padding for spacing */
+}
+.home-head h1{
+  color: #fafcfd;
+  font-size: 3rem;
+  font-weight: bolder;
+  
+}
+.home-para{
+  color:#d6d9da;
+  font-size: 1.5rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .container-fluid.home {
+    flex-direction: column;
+  }
+
+  .home-content,
+  .home-canvas {
+    flex: none;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+
+
 

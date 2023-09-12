@@ -5,7 +5,7 @@ function Work() {
     <div className="container-fluid work">
       <div className="col-lg-12 col-md-12">
         
-          <h3 className="head-work">What We Do</h3>
+          <h3 className="head-work">Portfolio</h3>
           <br />
           <p className="feature">Featured Content</p> <br />
           {/* cards */}

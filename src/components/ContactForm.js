@@ -1,40 +1,41 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 import "../styles_s/contactForm.css";
-import { Canvas } from "@react-three/fiber";
-import { Avatar } from "../Models/Avatar";
-import { OrbitControls } from "@react-three/drei";
+// import { Canvas } from "@react-three/fiber";
+// import { Avatar } from "../Models/Avatar";
+// import { OrbitControls } from "@react-three/drei";
 
 function ContactForm() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-  });
+  // const [formData, setFormData] = useState({
+  //   name: "",
+  //   email: "",
+  //   subject: "",
+  //   message: "",
+  // });
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
-  };
+  // const handleChange = (e) => {
+  //   const { name, value } = e.target;
+  //   setFormData({
+  //     ...formData,
+  //     [name]: value,
+  //   });
+  // };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
     // Handle form submission, e.g., send data to a server
-    console.log(formData);
-  };
+  //   console.log(formData);
+  // };
 
   return (
-    <div className="container mt-5 ">
-      <h2 className="contact-head">Contact Us</h2>
-      <div className="make-it">
-      <div className="make-it1">
+    <div >      
+      {/* className="container mt-5" */}
+  {/* <h2 className="contact-head">Contact Us</h2> */}
+  {/* <div className="make-it-container">
+    <div className="make-it1">
       <form onSubmit={handleSubmit} className="contact-form">
-        <div className="row mb-3 ">
-          <div className="row">
-            <label htmlFor="email" className="form-label">
+        <div className="row mb-3">
+          <div className="input-container">
+            <label htmlFor="name" className="form-label">
               Name
             </label>
             <input
@@ -46,7 +47,7 @@ function ContactForm() {
               onChange={handleChange}
             />
           </div>
-          <div className="row">
+          <div className="input-container">
             <label htmlFor="email" className="form-label">
               Email
             </label>
@@ -59,54 +60,37 @@ function ContactForm() {
               onChange={handleChange}
             />
           </div>
-          {/* <div className="row">
-            <label htmlFor="subject" className="form-label">
-              Subject
+          <div className="input-container">
+            <label htmlFor="message" className="form-label">
+              Message
             </label>
-            <input
-              type="text"
-              className="form-control"
-              id="subject"
-              name="subject"
-              value={formData.subject}
+            <textarea
+              className="form-control text-area"
+              id="message"
+              name="message"
+              rows="4"
+              value={formData.message}
               onChange={handleChange}
-            />
-          </div> */}
+            ></textarea>
+          </div>
         </div>
-        <div className="mb-3">
-          <label htmlFor="message" className="form-label">
-            Message
-          </label>
-          <textarea
-            className="form-control text-area"
-            id="message"
-            name="message"
-            rows="4"
-            value={formData.message}
-            onChange={handleChange}
-          ></textarea>
-        </div>
+
         <button type="submit" className="btn btn-primary send-message">
           Send Message
         </button>
       </form>
-      
-        
-      </div>
-      
-        
-     
+    </div> */}
 
-      {/* space for animation */}
-      <div className="make-it2">
-      <Canvas camera={{position:[3,3,3],fov:30}}>
-        <ambientLight intensity={10}/>
-        <OrbitControls/>
-       <Avatar/>
+    {/* <div className="make-it2">
+      <Canvas camera={{ position: [3, 3, 3], fov: 30 }}>
+        <ambientLight intensity={10} />
+        <OrbitControls />
+        <Avatar />
       </Canvas>
-      </div>
-      </div>
-    </div>
+    </div> */}
+  {/* </div> */}
+</div>
+
   );
 }
 

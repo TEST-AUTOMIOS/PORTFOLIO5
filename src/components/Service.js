@@ -8,22 +8,27 @@ function Service() {
           <div className="flex-row">
             <div className="our-service">
               <h2>Our Service</h2>
+              <br/>
               &nbsp;
               <p className="solve">
                 We Solve Creative Delusions <br /> Efficiently
               </p>
               &nbsp;
+              <br/>
               <p>
                 The display employs new techniques and technology to precisely
                 follow the curves of the design, <br />
                 all the way to the elegantly rounded corners.
               </p>
               <br />
-              <a href="/contact">
+
+              {/* <a href="/contact">
                 <button type="button" className="home-button">
                   Get Started
                 </button>
-              </a>
+              </a> */}
+              <br/>
+              <br/>
               <br/>
               <div className="infos">
                 <div className="info1">

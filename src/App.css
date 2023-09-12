@@ -2,3 +2,25 @@
  *{
   background: #0a0913;
 }
+/* .container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+} */
+.app{
+  overflow: hidden;
+}
+/* Track */
+::-webkit-scrollbar {
+  width: 5px; /* Adjust the width as needed */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; /* Color of the thumb */
+  border-radius: 6px; /* Rounded corners for the thumb */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color of the thumb on hover */
+}

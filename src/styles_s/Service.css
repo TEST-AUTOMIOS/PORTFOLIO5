@@ -22,7 +22,7 @@ p{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding:50px;
+    /* padding:50px; */
 }
 
 .info1 h3{

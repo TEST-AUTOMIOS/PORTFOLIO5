@@ -51,7 +51,7 @@
   transform: scaleX(0.9);
 }
 
-/* Home.css */
+
 
 
 
@@ -86,6 +86,9 @@
   justify-content: center;
   align-items: center;
   padding: 20px; /* Add padding for spacing */
+  max-width: 100%;
+  position: relative;
+   
 }
 .home-head h1{
   color: #fafcfd;
@@ -104,6 +107,11 @@
 @media (max-width: 768px) {
   .container-fluid.home {
     flex-direction: column;
+    text-align: center; /* Center the content on small screens */
+  }
+
+  .home-flex {
+    flex-direction: column; /* Stack content vertically */
   }
 
   .home-content,
@@ -111,10 +119,10 @@
     flex: none;
     width: 100%;
     text-align: center;
+    padding: 10px; /* Adjust the padding for spacing on small screens */
+  }
+
+  .home-head h1 {
+    font-size: 2rem; /* Decrease font size for smaller screens */
   }
 }
-
-
-
-
-

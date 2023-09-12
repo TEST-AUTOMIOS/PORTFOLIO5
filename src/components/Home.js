@@ -22,16 +22,16 @@ function Home() {
               Experience
             </h1>
           </div>
-          <br/>
-          <br/>
+          <br />
+          <br />
           <div className="home-para">
             <p>
               We collaborate with smart and creative people to <br />
               build awesome WordPress Full Site Editing Themes.
             </p>
           </div>
-          <br/>
-          <br/>
+          <br />
+          <br />
           <div>
             <a href="/work">
               <button type="button" className="home-button">
@@ -40,21 +40,21 @@ function Home() {
             </a>
           </div>
         </div>
+      </div>
 
-
-        {/* animation content */}
-        <div className="home-canvas">
-          <Canvas
-            camera={{ position: [0, 0, 15], fov: 50, near: 0.1, far: 100 }}
-          >
-            <ambientLight intensity={1} />
-            <OrbitControls />
-            <Model modelPath="/need_some_space.glb" scale={modelScale} />
-          </Canvas>
-        </div>
+      {/* Move the following div outside of the home-flex */}
+      <div className="home-canvas">
+        <Canvas
+          camera={{ position: [0, 0, 15], fov: 50, near: 0.1, far: 100 }}
+        >
+          <ambientLight intensity={1} />
+          <OrbitControls />
+          <Model modelPath="/need_some_space.glb" scale={modelScale} />
+        </Canvas>
       </div>
     </div>
   );
 }
+
 
 export default Home;

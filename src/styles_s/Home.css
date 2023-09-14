@@ -104,10 +104,11 @@
 }
 
 /* Media query for responsiveness */
-@media (max-width: 768px) {
+@media (max-width: 768px) and (orientation: landscape) {
   .container-fluid.home {
     flex-direction: column;
     text-align: center; /* Center the content on small screens */
+    height: 100%;
   }
 
   .home-flex {

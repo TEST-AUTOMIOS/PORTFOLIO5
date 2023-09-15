@@ -3,7 +3,7 @@ import "../styles_s/Work.css";
 function Work() {
   return (
     <div className="container-fluid work">
-      <div className="col-lg-12 col-md-12">
+      <div className="col-lg-12 col-md-12 col-sm-12">
         <hr/>
         
           <h3 className="head-work">Portfolio</h3>
@@ -11,7 +11,7 @@ function Work() {
           <p className="feature">Featured Content</p> <br />
           {/* cards */}
           <div className="row row-cols-1 row-cols-md-3 g-5 work-cards">
-            <div className="col work-card">
+            <div className="col-lg-4 col-md-4 col-sm-12 work-card">
               <div className="card h-100">
                 <img
                   src="https://wallpapercave.com/wp/AFPSg2j.jpg"
@@ -33,7 +33,7 @@ function Work() {
                 </div> */}
               </div>
             </div>
-            <div className="col work-card">
+            <div className="col-lg-4 col-md-4 col-sm-12 work-card">
               <div className="card h-100">
                 <img
                   src="https://wallpapercave.com/wp/iTBpoXA.jpg"
@@ -53,7 +53,7 @@ function Work() {
                 </div> */}
               </div>
             </div>
-            <div className="col work-card">
+            <div className="col-lg-4 col-md-4 col-sm-12 work-card">
               <div className="card h-100">
                 <img
                   src="https://wallpapercave.com/wp/76xAu3H.jpg"

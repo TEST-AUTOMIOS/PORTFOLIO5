@@ -43,26 +43,48 @@ p{
    }
    .info1 p{
     font-size: large ;
-   }
-        
-        
-        
+   }     
     }
-    @media (max-width:760px) and (orientation: landscape){
-        .service{
-            height: 100%;
-            display: flex;
-            flex-direction: column;
+    @media (max-width: 760px) and (orientation: landscape) {
+        /* .service {
+          height: auto;
+          display: flex;
+          flex-direction: column;
+        } */
+      
+        /* .info1 {
+          font-size: clamp(1rem, 3vw + 0.8vh, 1.6rem);  Adjust font size 
+          padding: 5px;
+        } */
+      
+        /* .info1 p {
+          font-size: small; /* Adjust font size 
         }
-       .info1 {
-       font-size:clamp(1.4rem,5vw + .8vh ,2.1rem);
-       padding: 5px;
-       }
-       .info1 p{
-        font-size: large ;
-       }
-            
-            
-            
+      
+        .infos {
+          flex-wrap: wrap;
+          justify-content: space-evenly;
         }
+      } */
+      @media screen and (max-width: 1024px) {
+        .container-fluid.service {
+          padding: 10px;
+        }
+      
+        .our-service {
+          padding: 10px;
+        }
+      
+        .help1 {
+          flex-direction: column;
+          align-items: center;
+        }
+      
+        .help {
+          flex: none;
+          margin-bottom: 20px;
+        }
+      }
+    }
+      
     

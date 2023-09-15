@@ -27,10 +27,27 @@ function Service() {
                   Get Started
                 </button>
               </a> */}
-              <br/>
-              <br/>
-              <br/>
-              <div className="infos">
+              
+              <div className="help1" style={{marginTop:'50px', display:'flex', padding:'10px',justifyContent:"space-between"}}>
+                <div className="help">
+                <h3>95</h3>
+                    <p>Projects Completed</p>
+                </div>
+                <div className="help">
+                <h3>2310</h3>
+                    <p>Happy Clients</p>
+                </div>
+                <div className="help">
+                <h3>215</h3>
+                    <p>Hours Spent</p>
+                </div>
+                <div className="help">
+                <h3>479</h3>
+                    <p>Members</p>
+                </div>
+              </div>
+              
+              {/* <div className="infos">
                 <div className="info1">
                     <h3>95</h3>
                     <p>Projects Completed</p>
@@ -47,7 +64,7 @@ function Service() {
                     <h3>479</h3>
                     <p>Members</p>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

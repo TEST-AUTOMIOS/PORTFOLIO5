@@ -73,7 +73,7 @@ p{
           justify-content: space-evenly;
         }
       } */
-      @media screen and (max-width: 1024px) {
+      @media screen and (max-width: 1200px) {
         .container-fluid.service {
           padding: 10px;
         }

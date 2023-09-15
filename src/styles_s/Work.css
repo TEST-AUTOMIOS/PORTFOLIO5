@@ -59,3 +59,10 @@
     background: linear-gradient(to right, rgb(26, 11, 138), rgb(169, 169, 220),rgb(26, 11, 138));
     border-radius: 10%;
 }
+
+@media (orientation:landscape) {
+    .work-cards{
+        flex-wrap: wrap;
+    }
+    
+}

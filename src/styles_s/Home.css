@@ -107,12 +107,12 @@
 @media (max-width: 768px) and (orientation: landscape) {
   .container-fluid.home {
     flex-direction: column;
-    text-align: center; /* Center the content on small screens */
-    height: 100%;
+    text-align: center; 
+    height: 100%;/* Center the content on small screens */
   }
 
   .home-flex {
-    flex-direction: column; /* Stack content vertically */
+    flex-direction: row; /* Stack content vertically */
   }
 
   .home-content,
@@ -127,3 +127,29 @@
     font-size: 2rem; /* Decrease font size for smaller screens */
   }
 }
+
+/* Media query for responsiveness */
+@media (max-width: 768px) and (orientation: portrait) {
+  .container-fluid.home {
+    flex-direction: column;
+    text-align: center; 
+    height: 100%;/* Center the content on small screens */
+  }
+
+  .home-flex {
+    flex-direction: row; /* Stack content vertically */
+  }
+
+  .home-content,
+  .home-canvas {
+    flex: none;
+    width: 100%;
+    text-align: center;
+    padding: 10px; /* Adjust the padding for spacing on small screens */
+  }
+
+  .home-head h1 {
+    font-size: 2rem; /* Decrease font size for smaller screens */
+  }
+}
+

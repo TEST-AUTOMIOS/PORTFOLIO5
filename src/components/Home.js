@@ -14,7 +14,7 @@ function Home() {
 
   return (
     <div className="container-fluid home">
-      <div className="home-flex">
+     
         <div className="home-content">
           <div className="home-head">
             <h1>
@@ -39,7 +39,7 @@ function Home() {
               </button>
             </a>
           </div>
-        </div>
+       
       </div>
 
       {/* Move the following div outside of the home-flex */}

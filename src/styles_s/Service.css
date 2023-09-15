@@ -45,7 +45,14 @@ p{
     font-size: large ;
    }     
     }
-    @media (max-width: 760px) and (orientation: landscape) {
+    @media (max-width: 760px)  {
+        /* flex-direction:row; */
+        /* .help1 {
+           
+            justify-content: flex-start;
+            align-items: center;
+          } */
+       
         /* .service {
           height: auto;
           display: flex;

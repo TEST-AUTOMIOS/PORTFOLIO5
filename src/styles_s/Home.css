@@ -117,7 +117,7 @@
 
   .home-content,
   .home-canvas {
-    flex: none;
+    flex:auto;
     width: 100%;
     text-align: center;
     padding: 10px; /* Adjust the padding for spacing on small screens */

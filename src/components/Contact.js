@@ -97,7 +97,7 @@ function Contact(){
     </div>
 
     <div className="make-it2">
-      <Canvas camera={{ position: [3, 3, 3], fov: 30 }}>
+      <Canvas camera={{ position: [3, 3, 3], fov: 40 }}>
         <ambientLight intensity={10} />
         <OrbitControls />
         <Avatar />

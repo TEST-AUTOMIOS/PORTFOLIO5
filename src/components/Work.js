@@ -4,7 +4,7 @@ function Work() {
   return (
     <div className="container-fluid work">
       <div className="col-lg-12 col-md-12 col-sm-12">
-        <hr/>
+        {/* <hr/> */}
         
           <h3 className="head-work">Portfolio</h3>
           <br />

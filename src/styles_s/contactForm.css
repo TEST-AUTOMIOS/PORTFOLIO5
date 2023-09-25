@@ -67,10 +67,12 @@
     .make-it1{
         display: block;
         width: 100%;
+      
     }
     .make-it2{
         display:block!important;
         width: 100%;
+       
     }
 }
 .row{

@@ -7,7 +7,6 @@
     height: auto !important ;
   }
 }
-@media(max-width:)
 .home-head {
   color: rgb(218, 214, 214);
   font-size: clamp(2rem, 5vw, 4rem);

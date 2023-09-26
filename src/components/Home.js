@@ -39,8 +39,8 @@ function Home() {
       className="home d-flex justify-content-center align-items-center text-center"
     >
       <Row>
-        <Col lg="6" md="12" sm="12" xs="12">
-          <div className="home-content">
+        <Col lg="6" md="12" sm="12" xs="12" className="home-content">
+          
             <h1 className="home-head" ref={textItem}>
               We Build Digital <br />
               Experience
@@ -48,13 +48,11 @@ function Home() {
 
             <br />
 
-            <div className="text-container">
-              <p>
-                We collaborate with smart and creative people to <br />
-                build awesome WordPress Full Site Editing Themes.
-              </p>
-            </div>
-            <br />
+            <p className="home-para">
+              We collaborate with smart and creative people to <br />
+              build awesome WordPress Full Site Editing Themes.
+            </p>
+
             <br />
             <div>
               <a href="/work">
@@ -63,22 +61,20 @@ function Home() {
                 </button>
               </a>
             </div>
-          </div>
+          
         </Col>
-        <Col lg="6" md="12" sm="12" xs="12">
-          <div className="home-canvas ">
-            <Canvas
-              camera={{ position: [0, 0, 15], fov: 50, near: 0.1, far: 100 }}
-            >
-              <ambientLight intensity={1} />
-              <OrbitControls />
-              <Model modelPath="/need_some_space.glb" scale={modelScale} />
-              <mesh ref={ModelItem}>
-                <boxGeometry />
-                <meshBasicMaterial />
-              </mesh>
-            </Canvas>
-          </div>
+        <Col  lg="6" md="12" sm="12" xs="12" className="home-anime">
+          <Canvas
+            camera={{ position: [0, 0, 15], fov: 50, near: 0.1, far: 100 }}
+          >
+            <ambientLight intensity={1} />
+            <OrbitControls />
+            <Model modelPath="/need_some_space.glb" scale={modelScale} />
+            <mesh ref={ModelItem}>
+              <boxGeometry />
+              <meshBasicMaterial />
+            </mesh>
+          </Canvas>
         </Col>
       </Row>
     </Container>

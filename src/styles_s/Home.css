@@ -7,6 +7,7 @@
     height: auto !important ;
   }
 }
+@media(max-width:)
 .home-head {
   color: rgb(218, 214, 214);
   font-size: clamp(2rem, 5vw, 4rem);
@@ -17,11 +18,17 @@
 .home-span {
   color: #7d7d7e;
 }
-.text-container {
+.home-para {
   font-size: clamp(0.8rem, 5vw, 1.5rem);
   
   text-align: center;
   color: #d0d0d4;
+}
+
+/* home anime */
+.home-anime{
+ 
+  padding: 10px;
 }
 .home-button {
   color: #fafcfd;

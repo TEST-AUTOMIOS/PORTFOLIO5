@@ -8,6 +8,7 @@ import {
 } from "@react-three/drei";
 import gsap from "gsap";
 import { Col, Container, Row } from "reactstrap";
+import { motion } from "framer-motion";
 
 function Model({ modelPath, scale }) {
   const gltf = useGLTF(modelPath, true);
@@ -39,31 +40,36 @@ function Home() {
       className="home d-flex justify-content-center align-items-center text-center"
     >
       <Row>
-        <Col lg="6" md="12" sm="12" xs="12" className="home-content">
-          
-            <h1 className="home-head" ref={textItem}>
-              We Build Digital <br />
-              Experience
-            </h1>
+        <motion.Col
+          lg="6"
+          md="12"
+          sm="12"
+          xs="12"
+          className="home-content"
+          {...slideAnimation("left")}
+        >
+          <h1 className="home-head" ref={textItem}>
+            We Build Digital <br />
+            Experience
+          </h1>
 
-            <br />
+          <br />
 
-            <p className="home-para">
-              We collaborate with smart and creative people to <br />
-              build awesome WordPress Full Site Editing Themes.
-            </p>
+          <p className="home-para">
+            We collaborate with smart and creative people to <br />
+            build awesome WordPress Full Site Editing Themes.
+          </p>
 
-            <br />
-            <div>
-              <a href="/work">
-                <button type="button" className="home-button">
-                  Explore
-                </button>
-              </a>
-            </div>
-          
-        </Col>
-        <Col  lg="6" md="12" sm="12" xs="12" className="home-anime">
+          <br />
+          <div>
+            <a href="/work">
+              <button type="button" className="home-button">
+                Explore
+              </button>
+            </a>
+          </div>
+        </motion.Col>
+        <Col lg="6" md="12" sm="12" xs="12" className="home-anime">
           <Canvas
             camera={{ position: [0, 0, 15], fov: 50, near: 0.1, far: 100 }}
           >
@@ -80,5 +86,28 @@ function Home() {
     </Container>
   );
 }
+
+export const transition = { type: "spring", duration: 1 };
+export const slideAnimation = (direction) => {
+  return {
+    initial: {
+      x: direction === "left" ? -300 : direction === "right" ? 100 : 0,
+      y: direction === "up" ? 100 : direction === "down" ? -100 : 0,
+      opacity: 0,
+      transition: { ...transition, delay: 0.5 },
+    },
+    animate: {
+      x: 0,
+      y: 0,
+      opacity: 1,
+      transition: { ...transition, delay: 0 },
+    },
+    exit: {
+      x: direction === "left" ? -100 : direction === "right" ? 100 : 0,
+      y: direction === "up" ? 100 : direction === "down" ? -100 : 0,
+      transition: { ...transition, delay: 0 },
+    },
+  };
+};
 
 export default Home;
